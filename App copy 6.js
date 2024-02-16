@@ -3,9 +3,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 //import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import home from './src/view/Screen1'; // Asegúrate de proporcionar la ruta correcta
+import Home from './src/view/Screen1'; // Asegúrate de proporcionar la ruta correcta
 import PelisScreen from './src/view/pelis';
-import SeriesScreen from './src/view/series';
+import home from './src/view/Screen1';
 
 const   Stack = createNativeStackNavigator();
 
@@ -14,8 +14,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" options={{headerShown: false}} component={home} />
-        <Stack.Screen name="pelisScreen" options={{headerShown: false}} component={PelisScreen} />
-        <Stack.Screen name="seriesScreen" options={{headerShown: false}} component={SeriesScreen} />
+        <Stack.Screen name="PelisScreen" options={{headerShown: false}} component={PelisScreen} />
         
       </Stack.Navigator>
     </NavigationContainer>

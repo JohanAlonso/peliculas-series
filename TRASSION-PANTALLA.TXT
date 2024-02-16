@@ -1,0 +1,12 @@
+const AppNavigator = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+
+                                            component={home}>>>nombre con el que se esta exportando
+        <Stack.Screen name="Home" component={home} />
+        <Stack.Screen name="Pelis" component={PelisScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
